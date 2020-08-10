@@ -1,21 +1,23 @@
 # Graphs
 
-*Day 1*
+_Day 1_
 
 ## 1. What is a graph and how is it represented?
 
 - What is a Graph?
 
 - Terminology
-    - Directed Vs Undirected
-        - Directed (Twitter follow) : Undirected (bi-directional) (Facebook)
-        - Undirected Edge is the same as a bi directional edge 
-    
-    - Cyclic Vs Acyclic
-        - cyclic follows a cycle within a graph
-        - acyclic does not follow a cycle (to the origin point)
-    - Dense Vs Sparse
-    - Weighted Vs Unweighted
+
+  - Directed Vs Undirected
+
+    - Directed (Twitter follow) : Undirected (bi-directional) (Facebook)
+    - Undirected Edge is the same as a bi directional edge
+
+  - Cyclic Vs Acyclic
+    - cyclic follows a cycle within a graph
+    - acyclic does not follow a cycle (to the origin point)
+  - Dense Vs Sparse
+  - Weighted Vs Unweighted
 
 - Adjacency Lists & Adjacency Matrices
 
@@ -37,17 +39,15 @@ class Graph:
         pass
 ```
 
-
-
-
 ## 2. Breadth First & Depth first Traversal
+
 These traversals use the BFS and DFS algorithm respectively
 
-- *BFT* Looks at nodes `1` away then nodes `2` away then nodes `n` away such that `n` is the next level of children, grand-children etc
-- *DFT* looks at a `neighbor`, then the `neighbor's neighbor`, then the `neighbor's neighbor's neighbor` etc
-
+- _BFT_ Looks at nodes `1` away then nodes `2` away then nodes `n` away such that `n` is the next level of children, grand-children etc
+- _DFT_ looks at a `neighbor`, then the `neighbor's neighbor`, then the `neighbor's neighbor's neighbor` etc
 
 ## Lets take a quick break
+
 After the break we can look at the concept of this traversal and run through the traversing process
 
 ### 3. Partial Traversal example
@@ -96,7 +96,7 @@ q = [2]
 visited = {1}
 ```
 
-deque item, and repeat process:
+dequeue item, and repeat process:
 
 ```
 q = []
@@ -117,7 +117,9 @@ def bft(self, starting_vertex_id):
 def bft(self, starting_vertex_id):
     pass
 ```
+
 ## Lets take a small break
+
 After this break we will look at how we can convert the bft to dft and talk about the difference between bft and bfs
 
 ## 4. What can we do with this to make a dft (Think about the Data Structure used)?
@@ -126,7 +128,6 @@ After this break we will look at how we can convert the bft to dft and talk abou
 def dft(self, starting_vertex_id):
     pass
 ```
-
 
 ```
 s = []
@@ -203,7 +204,6 @@ def bfs(self, starting_vertex_id, target_vertex_id):
 
 ## bfs partial search
 
-
 ```
 q = []
 visited = {}
@@ -259,5 +259,7 @@ q = []
 visited = {1, 2, 3, 4, 5, 6, 7}
 
 ```
+
 ## Today's Project
+
 let's take a look at the project repo!
